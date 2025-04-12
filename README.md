@@ -15,4 +15,12 @@ optional: set your queue_connection to database/redis and set mail credentials t
 `php artisan migrate`\
 `npx vite build`
 
+## Testing
+`cp .env.example .env.testing`
+
+make sure to set your `db_database` to a different database than your `.env`
+set `queue_connection` to `sync`
+run `php artisan test`
+
+
 
